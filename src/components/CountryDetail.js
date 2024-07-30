@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from "react";
+
 import axios from "axios";
+
 import { useParams, useNavigate } from "react-router-dom";
+
 import { Typography, Alert, Container, Button } from "@mui/material";
 
 const CountryDetail = () => {
   const { name } = useParams();
   const navigate = useNavigate();
+  
   const [country, setCountry] = useState(null);
   const [error, setError] = useState(null);
 
@@ -45,7 +49,15 @@ const CountryDetail = () => {
         variant="contained"
         color="primary"
         onClick={() => navigate(-1)}
-        sx={{  textTransform: "none",marginBottom: "20px", backgroundColor: "#fff", color: "black", maxWidth: "120px", transition: ".3s ease-in-out",  "&:hover": { backgroundColor: "black", color: "white" }}}
+        sx={{
+          textTransform: "none",
+          marginBottom: "20px",
+          backgroundColor: "#fff",
+          color: "black",
+          maxWidth: "120px",
+          transition: ".3s ease-in-out",
+          "&:hover": { backgroundColor: "black", color: "white" },
+        }}
       >
         Назад
       </Button>

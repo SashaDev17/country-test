@@ -1,11 +1,11 @@
 import React from "react";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import CountryList from "./components/CountryList";
 import CountryDetail from "./components/CountryDetail";
 
-import { Container, Divider } from "@mui/material";
+import { Container } from "@mui/material";
 
 function App() {
   return (
